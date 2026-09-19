@@ -1,0 +1,108 @@
+/* Estilos compartidos */
+:root {
+    --rojoMicrosoft: #F25022;
+    --verdeMicrosoft: #7FBA00;
+    --azulMicrosoft: #00A4EF;
+    --amarilloMicrosoft: #FFB900;
+    --azulBoton: #0067b8;
+    --grisClaro: #f5f5f5
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding-top: 72px;
+    color: #222
+}
+
+.seccion {
+    padding: 70px 0
+}
+
+.seccionGris {
+    background: var(--grisClaro)
+}
+
+.tituloSeccion {
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.tituloSeccion p {
+    color: var(--azulBoton);
+    font-weight: bold
+}
+
+.tarjeta {
+    height: 100%;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001
+}
+
+.tarjetaIcono {
+    font-size: 35px;
+    color: var(--azulBoton)
+}
+
+.btn-primary {
+    background: var(--azulBoton);
+    border-color: var(--azulBoton)
+}
+
+.logoMicrosoft {
+    display: grid;
+    grid-template-columns: 14px 14px;
+    grid-template-rows: 14px 14px;
+    gap: 2px;
+    margin-right: 9px
+}
+
+.logoMicrosoft span {
+    display: block
+}
+
+.rojo {
+    background: var(--rojoMicrosoft)
+}
+
+.verde {
+    background: var(--verdeMicrosoft)
+}
+
+.azul {
+    background: var(--azulMicrosoft)
+}
+
+.amarillo {
+    background: var(--amarilloMicrosoft)
+}
+
+.footer {
+    background: #202020;
+    color: #fff;
+    padding: 45px 0 20px
+}
+
+.footer a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 6px
+}
+
+@media(max-width:768px) {
+    body {
+        padding-top: 68px
+    }
+
+    .seccion {
+        padding: 50px 0
+    }
+}

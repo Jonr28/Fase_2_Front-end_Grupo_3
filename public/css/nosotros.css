@@ -1,0 +1,17 @@
+/* Estilos exclusivos de Nosotros */
+.historiaLinea {
+    border-left: 4px solid var(--azulBoton);
+    padding-left: 25px
+}
+
+.historiaLinea p {
+    line-height: 1.7
+}
+
+.listaValores li {
+    margin-bottom: 8px
+}
+
+.objetivo {
+    border-top: 4px solid var(--azulBoton)
+}

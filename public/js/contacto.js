@@ -1,0 +1,2 @@
+/* JS de Contactar: validación Front-End */
+let formularioContacto=document.querySelector('#formularioContacto');if(formularioContacto){formularioContacto.addEventListener('submit',function(evento){evento.preventDefault();if(!formularioContacto.checkValidity()){formularioContacto.classList.add('was-validated');return}alert('Mensaje enviado correctamente. Esta es una demostración académica.');formularioContacto.reset();formularioContacto.classList.remove('was-validated')})}

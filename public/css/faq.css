@@ -1,0 +1,12 @@
+/* Estilos exclusivos de FAQ */
+.accordion-button:not(.collapsed) {
+    color: #004578;
+    background: #eef6fb
+}
+
+.faqAside {
+    background: #f2f7fb;
+    border-left: 4px solid var(--azulBoton);
+    padding: 25px;
+    border-radius: 5px
+}

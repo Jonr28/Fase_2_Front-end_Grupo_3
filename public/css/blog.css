@@ -1,0 +1,35 @@
+/* Estilos exclusivos del Blog */
+.blogCard {
+    overflow: hidden;
+    padding: 0
+}
+
+.blogImagen {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 45px
+}
+
+.blogIa {
+    background: #0067b8
+}
+
+.blogNube {
+    background: #107c10
+}
+
+.blogSeguridad {
+    background: #5c2d91
+}
+
+.blogContenido {
+    padding: 24px
+}
+
+.blogFecha {
+    color: #737373;
+    font-size: 14px
+}

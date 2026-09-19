@@ -1,0 +1,38 @@
+/* Estilos exclusivos de Inicio */
+.heroInicio {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #f4f8fc, #fff)
+}
+
+.heroInicio h1 {
+    font-size: 52px;
+    font-weight: 600
+}
+
+.heroInicio p {
+    font-size: 18px;
+    line-height: 1.7
+}
+
+.visualMicrosoft {
+    background: #202020;
+    color: #fff;
+    min-height: 310px;
+    padding: 40px;
+    border-radius: 10px
+}
+
+.cuadriculaMicrosoft {
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 60px 60px;
+    gap: 4px;
+    margin-bottom: 22px
+}
+
+.cuadriculaMicrosoft div {
+    width: 60px;
+    height: 60px
+}

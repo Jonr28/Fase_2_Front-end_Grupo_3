@@ -1,0 +1,22 @@
+/* Estilos exclusivos de Certificaciones */
+.nivelCard {
+    text-align: center;
+    border-top: 5px solid var(--azulBoton)
+}
+
+.nivelNumero {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: var(--azulBoton);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold
+}
+
+.rutaCertificacion {
+    margin-top: 40px
+}

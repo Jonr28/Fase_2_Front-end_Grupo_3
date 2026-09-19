@@ -1,0 +1,27 @@
+/* Estilos exclusivos de Contactar */
+.contactoCaja {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 30px
+}
+
+.contactoDato {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px
+}
+
+.contactoDato i {
+    color: var(--azulBoton);
+    font-size: 24px
+}
+
+.mapaFalso {
+    min-height: 280px;
+    background: #e8e8e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}

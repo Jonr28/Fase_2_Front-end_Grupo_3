@@ -1,0 +1,24 @@
+/* Estilos exclusivos de Soluciones */
+.productoCard {
+    transition: transform .2s
+}
+
+.productoCard:hover {
+    transform: translateY(-5px)
+}
+
+.productoIcono {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef6fb;
+    color: var(--azulBoton);
+    border-radius: 8px;
+    font-size: 30px
+}
+
+.tablaSoluciones th {
+    background: #f2f2f2
+}
