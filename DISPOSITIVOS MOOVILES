@@ -1,0 +1,94 @@
+
+
+/* Evita que la navbar fixed-top tape el contenido */
+body {
+  padding-top: 70px; /* ajustar según la altura real de la navbar */
+}
+
+/* H1 escalable: móvil -> escritorio */
+.heroInicio h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  line-height: 1.1;
+}
+
+/* Hero móvil: alturas y espaciado menos rígidos */
+.heroInicio {
+  min-height: auto;
+  padding: 40px 0;
+  display: block; /* permite que Bootstrap columns apilen naturalmente */
+}
+
+/* Ajustes de párrafo en hero */
+.heroInicio p {
+  font-size: clamp(14px, 2.2vw, 18px);
+}
+
+/* Visual Microsoft: menos padding en pantallas pequeñas */
+.visualMicrosoft {
+  min-height: auto;
+  padding: 24px;
+}
+
+/* Cuadrícula: evitar tamaños fijos, usar aspect-ratio para cuadrados */
+.cuadriculaMicrosoft {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.cuadriculaMicrosoft div {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* mantiene cuadrados responsivos */
+  height: auto;
+}
+
+/* Tarjetas y iconos: escala en pantallas pequeñas */
+.tarjetaIcono i {
+  font-size: clamp(28px, 6vw, 48px);
+}
+
+/* Layout: columnas de Bootstrap ya responsivas,
+   pero forzamos apilamiento en móviles si hay reglas personalizadas */
+@media (max-width: 991px) {
+  .col-lg-7, .col-lg-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .heroInicio {
+    padding: 30px 0;
+  }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas */
+@media (max-width: 575px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .heroInicio h1 {
+    font-size: 26px;
+  }
+
+  .visualMicrosoft {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .cuadriculaMicrosoft {
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+    gap: 6px;
+  }
+
+  .tarjeta {
+    padding: 18px 12px;
+  }
+}
+
+/* Imágenes y medios: que nunca desborden */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
